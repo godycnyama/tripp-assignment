@@ -89,7 +89,7 @@ const Layout = ({children}) => {
           </Hidden>
           <img src={Logo} alt="Logo" width="150" height="55"/>
           <Typography variant="h6" className={classes.title}>
-            My Users
+            My Fleet
           </Typography>
           <div>
             <IconButton
@@ -134,7 +134,7 @@ const Layout = ({children}) => {
           style={{zIndex: 1099}}
         >
           <div className={classes.toolbar} />
-              <MenuItem onClick={() => { setDrawerOpen(false); history.push('/')}}>
+              <MenuItem onClick={() => { setDrawerOpen(false); history.push('/dashboard')}}>
                 <div className={classes.menuItemContainer}>
                   <div>
                     <ListItemIcon>
@@ -215,7 +215,7 @@ const Layout = ({children}) => {
             }}
         >
             <div className={classes.toolbar} />
-              <MenuItem onClick={() => { setDrawerOpen(false); history.push('/')}}>
+              <MenuItem onClick={() => { setDrawerOpen(false); history.push('/dashboard')}}>
                 <div className={classes.menuItemContainer}>
                   <div>
                     <ListItemIcon component="div">
