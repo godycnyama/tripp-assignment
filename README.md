@@ -1,15 +1,56 @@
-# assessement-godycnyama
+This project was bootstrapped with Create React App.
 
-This repo consists of two projects, front-end and api which are located in their respective folders.
+Available Scripts
+In the project directory, you can run:
 
-The api is a .Net Core GraphQL server based on the awesome HotChocolate GraphQL library. The database is SQL Server Express LocalDB. The front-end is a single page appplication based on React.js. This front-end performs GraphQL queries and mutations based on the equally awesome Apollo Client (a graphql client library). This app is used to create, update, delete and manage users. Application state in the React.js front-end is managed using the Redux Toolkit.
+yarn start
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in the browser.
 
-## Installation
+The page will reload if you make edits.
+You will also see any lint errors in the console.
 
-For installation, ensure you clone the repo to your computer. To run the front-end, first of all cd into the front-end folder and run yarn install to install all the dependencies. Make sure node.js is installed on your computer. To run the front-end in development mode, issue the yarn start command.
+yarn test
+Launches the test runner in the interactive watch mode.
+See the section about running tests for more information.
 
-To run the api ensure the .Net Core 5 SDK or run Runtime is installed on your computer. Furthermore, ensure that SQL Server/SQL Server Express and Entity Framework Core tools are installed on your computer. Issue the following commands in the command line in  that order:
-dotnet ef database update (to run the migrations and create the database tables), 
-dotnet restore  ( to install the project dependencies),  
-dotnet run (to run the app in development mode).You can interact with the graphql server directly by typing http://localhost:5000/graphql and use the Banana Cake Pop interface.
-The client is configured to interact with the api through the http://localhost:5000/graphql end point. This configuration is found in the apolloClient file in the shared folder of the front-end project.
+yarn build
+Builds the app for production to the build folder.
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.
+Your app is ready to be deployed!
+
+See the section about deployment for more information.
+
+yarn eject
+Note: this is a one-way operation. Once you eject, you can’t go back!
+
+If you aren’t satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use eject. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+Learn More
+You can learn more in the Create React App documentation.
+
+To learn React, check out the React documentation.
+
+Code Splitting
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+Analyzing the Bundle Size
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+Making a Progressive Web App
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+Advanced Configuration
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+Deployment
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+yarn build fails to minify
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
