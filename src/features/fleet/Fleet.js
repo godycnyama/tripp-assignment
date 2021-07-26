@@ -5,7 +5,6 @@ import Divider from "@material-ui/core/Divider";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-import KeyboardBackspaceIcon from "@material-ui/icons/KeyboardBackspace";
 import AddIcon from "@material-ui/icons/Add";
 import EditIcon from "@material-ui/icons/Edit";
 import DeleteIcon from "@material-ui/icons/Delete";
@@ -13,7 +12,6 @@ import { useHistory, Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import AlertDialogSlide from "../../shared/dialog";
 import { openToast } from "../../shared/Toast";
-import Busy from "../../shared/Busy";
 import { setTruck, deleteTruck } from "../../state/slices/trucksSlice";
 import { setTrailer, deleteTrailer } from "../../state/slices/trailersSlice";
 import { setDriver, deleteDriver } from "../../state/slices/driversSlice";
@@ -129,6 +127,18 @@ const ManageFleet = () => {
           <Divider />
           <br />
           <br />
+          <Button
+            variant="text"
+            color="primary"
+            style={{ marginLeft: 15, textTransform: "none" }}
+            startIcon={<AddIcon />}
+            component={Link}
+            to="/add-truck"
+            naked="true"
+          >
+            Add Truck
+          </Button>
+          <br />
           <div
             style={{
               display: "flex",
@@ -209,6 +219,18 @@ const ManageFleet = () => {
           <Divider />
           <br />
           <br />
+          <Button
+            variant="text"
+            color="primary"
+            style={{ marginLeft: 15, textTransform: "none" }}
+            startIcon={<AddIcon />}
+            component={Link}
+            to="/add-trailer"
+            naked="true"
+          >
+            Add Trailer
+          </Button>
+          <br />
           <div
             style={{
               display: "flex",
@@ -288,6 +310,18 @@ const ManageFleet = () => {
           <Typography variant="h6">My Drivers</Typography>
           <Divider />
           <br />
+          <br />
+          <Button
+            variant="text"
+            color="primary"
+            style={{ marginLeft: 15, textTransform: "none" }}
+            startIcon={<AddIcon />}
+            component={Link}
+            to="/add-driver"
+            naked="true"
+          >
+            Add Driver
+          </Button>
           <br />
           <div
             style={{

@@ -13,7 +13,6 @@ import { useHistory, Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import AlertDialogSlide from "../../shared/dialog";
 import { openToast } from "../../shared/Toast";
-import Busy from "../../shared/Busy";
 import { setTruck, deleteTruck } from "../../state/slices/trucksSlice";
 
 const ManageTrucks = () => {
@@ -73,8 +72,7 @@ const ManageTrucks = () => {
             <br />
             <br />
             <Button
-              type="submit"
-              variant="contained"
+              variant="text"
               color="primary"
               style={{ marginLeft: 15, textTransform: "none" }}
               startIcon={<AddIcon />}

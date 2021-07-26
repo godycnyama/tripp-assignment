@@ -76,7 +76,7 @@ code {
   vertical-align: center;
   margin: 10px;
   border-radius: 5px;
-  color:#0070f3;
+  color:#4464ec;
   z-index: 1;
   position: relative;
   transition: all 250ms ease-out;
@@ -91,7 +91,7 @@ code {
 }
 
 .invisible-checkboxes input[type=checkbox]:checked + .checkbox-alias{
-  background-color: #0070f3;
+  background-color: #4464ec;
   color: white;
 }
 
@@ -122,8 +122,8 @@ code {
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #4464ec;
+  border-color: #4464ec;
 }
 
 .card h3 {

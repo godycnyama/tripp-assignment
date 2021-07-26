@@ -3,8 +3,6 @@ import { Paper, Grid } from "@material-ui/core";
 import Divider from "@material-ui/core/Divider";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-import { Tooltip, IconButton } from "@material-ui/core";
-import KeyboardBackspaceIcon from "@material-ui/icons/KeyboardBackspace";
 import EditIcon from "@material-ui/icons/Edit";
 import { useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -21,7 +19,7 @@ const ViewAccount = () => {
     <Grid container>
       <Grid item xs={12} lg={6}>
         <Button
-          variant="contained"
+          variant="text"
           color="primary"
           startIcon={<EditIcon />}
           style={{ marginLeft: 0, textTransform: "none" }}

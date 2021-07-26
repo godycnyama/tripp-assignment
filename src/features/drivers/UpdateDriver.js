@@ -58,7 +58,7 @@ const UpdateDriver = () => {
   return (
     <div>
       <Button
-        variant="contained"
+        variant="text"
         color="primary"
         startIcon={<KeyboardBackspaceIcon />}
         style={{ marginLeft: 0, textTransform: "none" }}

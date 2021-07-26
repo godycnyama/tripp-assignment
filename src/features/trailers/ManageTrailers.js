@@ -13,7 +13,6 @@ import { useHistory, Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import AlertDialogSlide from "../../shared/dialog";
 import { openToast } from "../../shared/Toast";
-import Busy from "../../shared/Busy";
 import { setTrailer, deleteTrailer } from "../../state/slices/trailersSlice";
 
 const ManageTrailers = () => {
@@ -55,7 +54,7 @@ const ManageTrailers = () => {
     <Grid container>
       <Grid item xs={12} lg={6}>
         <Button
-          variant="contained"
+          variant="text"
           color="primary"
           startIcon={<KeyboardBackspaceIcon />}
           style={{ marginLeft: 0, textTransform: "none" }}
@@ -73,8 +72,7 @@ const ManageTrailers = () => {
             <br />
             <br />
             <Button
-              type="submit"
-              variant="contained"
+              variant="text"
               color="primary"
               style={{ marginLeft: 15, textTransform: "none" }}
               startIcon={<AddIcon />}

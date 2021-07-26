@@ -9,7 +9,6 @@ import {
   Button,
 } from "@material-ui/core";
 import KeyboardBackspaceIcon from "@material-ui/icons/KeyboardBackspace";
-import PeopleIcon from '@material-ui/icons/People';
 import NumberFormat from "react-number-format";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers";
@@ -58,7 +57,7 @@ const AddDriver = () => {
   return (
     <div>
       <Button
-        variant="contained"
+        variant="text"
         color="primary"
         startIcon={<KeyboardBackspaceIcon />}
         style={{ marginLeft: 0, textTransform: "none" }}
@@ -119,17 +118,6 @@ const AddDriver = () => {
                     inputProps={{ maxLength: 3 }}
                     fullWidth
                   />
-                </Grid>
-                <Grid item xs={12}>
-                  <div class="invisible-checkboxes">
-                    <input type="checkbox" name="rGroup" value="1" id="r1" />
-                    <label class="checkbox-alias" for="r1">Cargo Broker <PeopleIcon/>
-                    </label>
-                    <input type="checkbox" name="rGroup" value="2" id="r2" />
-                    <label class="checkbox-alias" for="r2">Transporter</label>
-                    <input type="checkbox" name="rGroup" value="3" id="r3" />
-                    <label class="checkbox-alias" for="r3">Cargo Owner</label>
-                  </div>
                 </Grid>
               </Grid>
               <br />

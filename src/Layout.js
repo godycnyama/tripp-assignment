@@ -8,10 +8,9 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Toolbar from '@material-ui/core/Toolbar';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import ListItemIcon from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Hidden from '@material-ui/core/Hidden';
-import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -19,7 +18,9 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import PeopleIcon from '@material-ui/icons/People';
 import LocalShippingIcon from '@material-ui/icons/LocalShipping';
 import SubwayIcon from '@material-ui/icons/Subway';
-import Logo from './logo.svg';
+import CommuteIcon from '@material-ui/icons/Commute';
+import { useSelector } from "react-redux";
+import Logo from './assets/images/logo.svg';
 
 
 const drawerWidth = 240;
@@ -58,6 +59,7 @@ const Layout = ({children}) => {
   const [drawerOpen, setDrawerOpen] = useState(null);
   const [anchorEl, setAnchorEl] = useState(null);
   const openAccountMenu = Boolean(anchorEl);
+  const { account } = useSelector((state) => state.account);
 
   const handleAccountMenu = (event) => {
     setAnchorEl(event.currentTarget);
@@ -89,7 +91,6 @@ const Layout = ({children}) => {
           </Hidden>
           <img src={Logo} alt="Logo" width="150" height="55"/>
           <Typography variant="h6" className={classes.title}>
-            My Fleet
           </Typography>
           <div>
             <IconButton
@@ -152,7 +153,7 @@ const Layout = ({children}) => {
                 <div className={classes.menuItemContainer}>
                   <div>
                     <ListItemIcon>
-                      <DashboardIcon/>
+                      <CommuteIcon/>
                     </ListItemIcon>
                   </div>
                   <div>
@@ -233,7 +234,7 @@ const Layout = ({children}) => {
                 <div className={classes.menuItemContainer}>
                   <div>
                     <ListItemIcon>
-                      <DashboardIcon/>
+                      <CommuteIcon/>
                     </ListItemIcon>
                   </div>
                   <div>
